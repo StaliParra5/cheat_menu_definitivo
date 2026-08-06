@@ -1,0 +1,51 @@
+# Strategic Comment: Efectos scriptados para la expansión final (Ejércitos Especiales y Rasgos Genéticos).
+
+# === 1. INVOCACIÓN DE EJÉRCITOS ESPECIALES ===
+
+cmd_effect_spawn_special_troops = {
+	# COMENTARIO ESTRATÉGICO: Invoca 5,000 tropas de infantería pesada especiales en la capital del jugador humano.
+	spawn_army = {
+		name = "Guardia de Honor Legendaria"
+		levies = 0
+		men_at_arms = {
+			type = heavy_infantry
+			stacks = 50
+		}
+		location = scope:actor.capital_province
+	}
+}
+
+# === 2. PANEL DE GENÉTICA Y RASGOS RAROS ===
+
+cmd_effect_toggle_pure_blood = {
+	# COMENTARIO ESTRATÉGICO: Alterna el rasgo genético Sangre Pura (pure_blood).
+	if = {
+		limit = { has_trait = pure_blood }
+		remove_trait = pure_blood
+	}
+	else = {
+		add_trait = pure_blood
+	}
+}
+
+cmd_effect_toggle_witch = {
+	# COMENTARIO ESTRATÉGICO: Alterna el rasgo de Bruja/Brujo (witch).
+	if = {
+		limit = { has_trait = witch }
+		remove_trait = witch
+	}
+	else = {
+		add_trait = witch
+	}
+}
+
+cmd_effect_toggle_giant = {
+	# COMENTARIO ESTRATÉGICO: Alterna el rasgo de Gigante (giant).
+	if = {
+		limit = { has_trait = giant }
+		remove_trait = giant
+	}
+	else = {
+		add_trait = giant
+	}
+}

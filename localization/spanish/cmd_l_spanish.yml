@@ -1,0 +1,101 @@
+﻿l_spanish:
+ # Strategic Comment: Traducciones al español para el Cheat Menu Definitivo de CK3 (Edición Completa Final + Límite de Dominio)
+
+ # Traits
+ trait_cmd_god_mode:0 "Modo Dios"
+ trait_cmd_god_mode_desc:0 "Este personaje posee un poder absoluto. Es inmortal, inmune a enfermedades, domina todos los atributos y posee limite de dominio y ducados gigantescos."
+
+ # Modificadores de opinión y carácter
+ cmd_cheat_love_opinion:0 "Truco de Amor/Respeto"
+
+ # GUI Principal
+ cmd_window_title:0 "⚡ CHEAT MENU DEFINITIVO ⚡"
+ cmd_hud_button_tooltip:0 "Abrir / Cerrar Cheat Menu Definitivo"
+ cmd_target_label:0 "Objetivo Activo:"
+ cmd_target_self:0 "👑 Mi Personaje"
+ cmd_target_self_tooltip:0 "Los trucos se aplicarán a tu personaje humano principal."
+ cmd_target_selected:0 "🎯 Personaje Seleccionado"
+ cmd_target_selected_tooltip:0 "Los trucos se aplicarán al personaje que tengas seleccionado actualmente en la pantalla."
+
+ # Pestañas GUI
+ cmd_tab_stats:0 "Stats & Spawner"
+ cmd_tab_resources:0 "Recursos & Ejércitos"
+ cmd_tab_realm:0 "Reino & Dominio"
+ cmd_tab_traits:0 "Traits & Genética"
+ cmd_tab_godmode:0 "Modo Dios & Salud"
+
+ # Encabezados Pestañas
+ cmd_stats_header:0 "Modificación de Atributos Base"
+ cmd_spawner_header:0 "Generador de Cortesanos Legendarios"
+ cmd_resources_header:0 "Inyección de Recursos de Reino"
+ cmd_army_header:0 "Invocación de Tropas Legendarias"
+ cmd_realm_header:0 "Gestión de Reino, Dominio y Guerra"
+ cmd_culture_faith_header:0 "Editor de Cultura y Religión"
+ cmd_traits_header:0 "Generador de Rasgos Únicos"
+ cmd_genetics_header:0 "Panel de Genética & Linaje Raro"
+ cmd_godmode_header:0 "Poderes Divinos y Salud Total"
+
+ # Botones GUI
+ cmd_btn_add_dip_5:0 "+5 Diplomacia"
+ cmd_btn_add_mar_5:0 "+5 Marcial"
+ cmd_btn_add_ste_5:0 "+5 Administración"
+ cmd_btn_add_int_5:0 "+5 Intriga"
+ cmd_btn_add_lea_5:0 "+5 Aprendizaje"
+ cmd_btn_add_pro_5:0 "+5 Destreza"
+
+ cmd_btn_spawn_god_commander:0 "⚔️ Comandante 100 Prowess"
+ cmd_btn_spawn_physician:0 "🩺 Médico Supremo (50 Learning)"
+
+ cmd_btn_add_gold_10k:0 "+10,000 Oro"
+ cmd_btn_add_prestige_5k:0 "+5,000 Prestigio"
+ cmd_btn_add_piety_5k:0 "+5,000 Piedad"
+ cmd_btn_add_renown_2k:0 "+2,500 Renombre"
+ cmd_btn_add_perk_points:0 "+5,000 Perk XP (Todos)"
+ cmd_btn_max_dread:0 "Pavor al Máximo (100)"
+ cmd_btn_spawn_special_troops:0 "🛡️ Invocar 5,000 Tropas de Élite"
+
+ cmd_btn_toggle_domain_limit:0 "🏰 Límite de Dominio y Ducados Infinito (+100)"
+ cmd_btn_max_capital:0 "Máximo Desarrollo & Control"
+ cmd_btn_win_wars:0 "Ganar Guerras Actuales (100%)"
+ cmd_btn_convert_capital:0 "🕌 Convertir Capital a Mi Cultura/Fe"
+ cmd_btn_max_fervor:0 "✨ Fervor de Religión al 100%"
+
+ cmd_btn_toggle_genius:0 "Rasgo: Genio"
+ cmd_btn_toggle_herculean:0 "Rasgo: Hércules"
+ cmd_btn_toggle_beautiful:0 "Rasgo: Bello"
+ cmd_btn_toggle_augustus:0 "Rasgo: Augusto"
+ cmd_btn_toggle_pure_blood:0 "🧬 Rasgo: Sangre Pura"
+ cmd_btn_toggle_witch:0 "🧹 Rasgo: Bruja / Brujo"
+
+ cmd_btn_toggle_god_mode:0 "⚡ Alternar Modo Dios"
+ cmd_btn_heal_character:0 "💚 Curar Salud & Estrés"
+
+ # Decisiones
+ cmd_decision_main_cheat_panel_name:0 "⚡ Cheat Menu: Inyectar Recursos de Reino"
+ cmd_decision_main_cheat_panel_desc:0 "Otorga 10,000 de Oro, Prestigio, Piedad, Renombre, Puntos de Perks, Salud y Desarrollo en tu capital."
+ cmd_decision_main_cheat_panel_tooltip:0 "Haz clic para inyectar un paquete masivo de recursos a tu personaje."
+
+ cmd_decision_toggle_god_mode_self_name:0 "⚡ Cheat Menu: Activar/Desactivar Modo Dios"
+ cmd_decision_toggle_god_mode_self_desc:0 "Concede o retira a tu personaje el rasgo divino "Modo Dios" que te hace inmortal y maximiza tus atributos."
+ cmd_decision_toggle_god_mode_self_tooltip:0 "Alternar la inmortalidad y los atributos supremos."
+
+ cmd_decision_win_wars_name:0 "⚡ Cheat Menu: Ganar Todas las Guerras Actuales"
+ cmd_decision_win_wars_desc:0 "Finaliza inmediatamente todas tus guerras activas otorgándote la victoria total."
+ cmd_decision_win_wars_tooltip:0 "Ganar las guerras actuales de forma instantánea."
+
+ # Interacciones por Clic Derecho
+ cmd_interaction_domain_limit:0 "⚡ Cheat: Límite de Dominio y Ducados Infinito (+100)"
+ cmd_interaction_add_gold:0 "⚡ Cheat: Dar 10,000 de Oro"
+ cmd_interaction_heal:0 "⚡ Cheat: Curar Enfermedades y Estrés"
+ cmd_interaction_kill:0 "⚡ Cheat: Matar Personaje"
+ cmd_interaction_imprison:0 "⚡ Cheat: Encarcelar Instantáneamente"
+ cmd_interaction_god_mode:0 "⚡ Cheat: Otorgar Modo Dios"
+ cmd_interaction_max_opinion:0 "⚡ Cheat: Forzar Opinión al Máximo (+100)"
+ cmd_interaction_add_claim:0 "⚡ Cheat: Reclamar Título Principal"
+
+ cmd_interaction_add_strong_hook:0 "⚡ Cheat: Crear Anzuelo Fuerte (Strong Hook)"
+ cmd_interaction_convert_culture:0 "⚡ Cheat: Convertir a Mi Cultura"
+ cmd_interaction_convert_faith:0 "⚡ Cheat: Convertir a Mi Religión"
+ cmd_interaction_make_lover:0 "⚡ Cheat: Hacer Amante"
+ cmd_interaction_make_soulmate:0 "⚡ Cheat: Hacer Alma Gemela"
+ cmd_interaction_legitimize:0 "⚡ Cheat: Legitimar Bastardo"

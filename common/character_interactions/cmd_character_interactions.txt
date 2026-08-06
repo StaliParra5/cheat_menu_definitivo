@@ -1,0 +1,229 @@
+# Strategic Comment: Interacciones de personaje (Clic Derecho) para el Cheat Menu Definitivo.
+# Permite al jugador interactuar con cualquier personaje del mapa para ejecutar efectos inmediatos.
+
+# --- Truco: Aumentar Límite de Dominio y Ducados (+100) ---
+cmd_interaction_domain_limit = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_toggle_domain_limit = yes
+		}
+	}
+}
+
+# --- Truco: Otorgar 10k Oro ---
+cmd_interaction_add_gold = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+	
+	is_shown = {
+		scope:actor = { is_ai = no }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_add_gold = yes
+		}
+	}
+}
+
+# --- Truco: Curar Personaje ---
+cmd_interaction_heal = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_heal_character = yes
+		}
+	}
+}
+
+# --- Truco: Matar Personaje ---
+cmd_interaction_kill = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_kill_character = yes
+		}
+	}
+}
+
+# --- Truco: Encarcelar ---
+cmd_interaction_imprison = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+		scope:recipient = { is_imprisoned = no }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_imprison_character = yes
+		}
+	}
+}
+
+# --- Truco: Activar Modo Dios ---
+cmd_interaction_god_mode = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_toggle_god_mode = yes
+		}
+	}
+}
+
+# --- Truco: Máxima Opinión (+100) ---
+cmd_interaction_max_opinion = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_max_opinion = yes
+		}
+	}
+}
+
+# --- Truco: Otorgar Reclamación Fuerte ---
+cmd_interaction_add_claim = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+		scope:recipient = { exists = primary_title }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_add_strong_claim = yes
+		}
+	}
+}
+
+# --- Truco: Crear Anzuelo Fuerte (Strong Hook) ---
+cmd_interaction_add_strong_hook = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_add_strong_hook = yes
+		}
+	}
+}
+
+# --- Truco: Convertir a Mi Cultura ---
+cmd_interaction_convert_culture = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_convert_to_player_culture = yes
+		}
+	}
+}
+
+# --- Truco: Convertir a Mi Religión ---
+cmd_interaction_convert_faith = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_convert_to_player_faith = yes
+		}
+	}
+}
+
+# --- Truco: Hacer Amante ---
+cmd_interaction_make_lover = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_make_lover = yes
+		}
+	}
+}
+
+# --- Truco: Hacer Alma Gemela ---
+cmd_interaction_make_soulmate = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_make_soulmate = yes
+		}
+	}
+}
+
+# --- Truco: Legitimar Bastardo ---
+cmd_interaction_legitimize = {
+	category = interaction_category_diplomacy
+	common_interaction_options = yes
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+		scope:recipient = { has_trait = bastard }
+	}
+
+	on_accept = {
+		scope:recipient = {
+			cmd_effect_legitimize_bastard = yes
+		}
+	}
+}

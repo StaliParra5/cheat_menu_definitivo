@@ -1,0 +1,113 @@
+# Strategic Comment: Efectos scriptados para la Expansión V2 del Cheat Menu Definitivo.
+# Incluye Spawner de cortesanos, conversión cultural/religiosa, motor de anzuelos y gestión de relaciones.
+
+# === 1. SPAWNER DE CORTESANOS Y COMANDANTES ===
+
+cmd_effect_spawn_god_commander = {
+	# COMENTARIO ESTRATÉGICO: Genera un comandante militar legendario en la corte del jugador con 100 de Destreza y 50 de Marcial.
+	create_character = {
+		gender = male
+		age = 25
+		culture = root.culture
+		faith = root.faith
+		dynasty = none
+		save_scope_as = created_commander
+	}
+	scope:created_commander = {
+		add_prowess = 100
+		add_martial = 50
+		add_trait = bladeroll_3
+		add_trait = strategist
+	}
+}
+
+cmd_effect_spawn_master_physician = {
+	# COMENTARIO ESTRATÉGICO: Genera un médico de la corte perfecto con 50 de Aprendizaje y rasgo de médico renombrado.
+	create_character = {
+		gender = female
+		age = 30
+		culture = root.culture
+		faith = root.faith
+		dynasty = none
+		save_scope_as = created_physician
+	}
+	scope:created_physician = {
+		add_learning = 50
+		add_trait = lifestyle_physician
+		add_trait = physician_3
+	}
+}
+
+cmd_effect_spawn_master_spymaster = {
+	# COMENTARIO ESTRATÉGICO: Genera un maestro espía con 50 de Intriga para operaciones de espionaje.
+	create_character = {
+		gender = female
+		age = 25
+		culture = root.culture
+		faith = root.faith
+		dynasty = none
+		save_scope_as = created_spy
+	}
+	scope:created_spy = {
+		add_intrigue = 50
+		add_trait = schemer
+	}
+}
+
+# === 2. CULTURA Y RELIGIÓN ===
+
+cmd_effect_convert_to_player_culture = {
+	# COMENTARIO ESTRATÉGICO: Convierte la cultura del personaje objetivo a la cultura del jugador humano.
+	set_culture = scope:actor.culture
+}
+
+cmd_effect_convert_to_player_faith = {
+	# COMENTARIO ESTRATÉGICO: Convierte la religión/fe del personaje objetivo a la fe del jugador humano.
+	set_faith = scope:actor.faith
+}
+
+cmd_effect_convert_capital_culture_faith = {
+	# COMENTARIO ESTRATÉGICO: Convierte instantáneamente la cultura y fe del condado capital a las del jugador humano.
+	if = {
+		limit = { exists = capital_province }
+		capital_province.county = {
+			set_county_culture = scope:actor.culture
+			set_county_faith = scope:actor.faith
+		}
+	}
+}
+
+cmd_effect_max_faith_fervor = {
+	# COMENTARIO ESTRATÉGICO: Maximiza el fervor de la fe del jugador al 100%.
+	scope:actor.faith = {
+		add_fervor = 100
+	}
+}
+
+# === 3. ANZUELOS Y SECRETOS ===
+
+cmd_effect_add_strong_hook = {
+	# COMENTARIO ESTRATÉGICO: Otorga al jugador humano un Anzuelo Fuerte (Strong Hook) indisoluble sobre el personaje objetivo.
+	add_hook = {
+		target = scope:actor
+		type = favor_hook
+	}
+}
+
+# === 4. RELACIONES Y FAMILIA ===
+
+cmd_effect_make_lover = {
+	# COMENTARIO ESTRATÉGICO: Establece una relación amorosa (Lover) entre el personaje objetivo y el jugador.
+	set_relation_lover = scope:actor
+}
+
+cmd_effect_make_soulmate = {
+	# COMENTARIO ESTRATÉGICO: Establece una relación de Alma Gemela (Soulmate) entre el personaje objetivo y el jugador.
+	set_relation_soulmate = scope:actor
+}
+
+cmd_effect_legitimize_bastard = {
+	# COMENTARIO ESTRATÉGICO: Convierte a un bastardo objetivo en hijo legítimo retirando penalizaciones.
+	remove_trait = bastard
+	add_trait = legitimized_bastard
+}

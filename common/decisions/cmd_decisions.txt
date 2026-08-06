@@ -1,0 +1,82 @@
+# Strategic Comment: Decisiones del panel principal de CK3 para trucos de autogestión y recursos globales del reino.
+
+cmd_decision_main_cheat_panel = {
+	title = cmd_decision_main_cheat_panel_name
+	desc = cmd_decision_main_cheat_panel_desc
+	selection_tooltip = cmd_decision_main_cheat_panel_tooltip
+	
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	
+	is_shown = {
+		is_ai = no
+	}
+
+	is_valid = {
+		is_ai = no
+	}
+
+	effect = {
+		cmd_effect_add_gold = yes
+		cmd_effect_add_prestige = yes
+		cmd_effect_add_piety = yes
+		cmd_effect_add_renown = yes
+		cmd_effect_max_dread = yes
+		cmd_effect_add_perk_points = yes
+		cmd_effect_heal_character = yes
+		cmd_effect_max_capital_county = yes
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+cmd_decision_toggle_god_mode_self = {
+	title = cmd_decision_toggle_god_mode_self_name
+	desc = cmd_decision_toggle_god_mode_self_desc
+	selection_tooltip = cmd_decision_toggle_god_mode_self_tooltip
+	
+	picture = "gfx/interface/illustrations/decisions/decision_personal.dds"
+
+	is_shown = {
+		is_ai = no
+	}
+
+	is_valid = {
+		is_ai = no
+	}
+
+	effect = {
+		cmd_effect_toggle_god_mode = yes
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+cmd_decision_win_wars = {
+	title = cmd_decision_win_wars_name
+	desc = cmd_decision_win_wars_desc
+	selection_tooltip = cmd_decision_win_wars_tooltip
+
+	picture = "gfx/interface/illustrations/decisions/decision_major.dds"
+
+	is_shown = {
+		is_ai = no
+		is_at_war = yes
+	}
+
+	is_valid = {
+		is_ai = no
+		is_at_war = yes
+	}
+
+	effect = {
+		cmd_effect_win_current_wars = yes
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}

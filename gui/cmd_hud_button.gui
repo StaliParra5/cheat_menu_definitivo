@@ -1,0 +1,24 @@
+# Strategic Comment: Botón de acceso directo en el HUD superior derecho para abrir/cerrar el Cheat Menu Definitivo.
+# Utiliza el sistema de variables de interfaz Jomini (GetVariableSystem) para alternar la visibilidad de la ventana.
+
+widget = {
+	name = "cmd_hud_button_widget"
+	parentanchor = top|right
+	position = { -360 42 }
+	size = { 40 40 }
+	layer = top
+
+	button_round = {
+		name = "cmd_toggle_button"
+		size = { 38 38 }
+		parentanchor = center
+		onclick = "[GetVariableSystem.Toggle('cmd_window_visible')]"
+		tooltip = "cmd_hud_button_tooltip"
+
+		button_icon = {
+			texture = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
+			size = { 26 26 }
+			parentanchor = center
+		}
+	}
+}

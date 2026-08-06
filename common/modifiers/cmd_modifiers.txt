@@ -1,0 +1,14 @@
+# Strategic Comment: Modificadores de personaje para el Cheat Menu Definitivo.
+
+# Modificador de opinión para relaciones forzadas
+cmd_cheat_love_opinion = {
+	value = 100
+	opinion = 100
+}
+
+# Modificador permanente de Límite de Dominio, Ducados y Vasallos (+100 Dominio, +100 Ducados, +200 Vasallos)
+cmd_modifier_infinite_domain = {
+	domain_limit = 100
+	duchy_limit = 100
+	vassal_limit = 200
+}

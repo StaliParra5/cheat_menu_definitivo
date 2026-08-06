@@ -1,0 +1,178 @@
+# Strategic Comment: Efectos scriptados modulares para el Cheat Menu Definitivo. 
+# Diseñados para ejecutarse tanto en el personaje del jugador (scope: root/scope:actor) como en cualquier objetivo (scope:recipient).
+
+# === LÍMITE DE DOMINIO Y DUCADOS INFINITO ===
+
+cmd_effect_toggle_domain_limit = {
+	# COMENTARIO ESTRATÉGICO: Alterna el modificador permanente de Límite de Dominio (+100) y Límite de Ducados (+100) en el personaje.
+	if = {
+		limit = { has_character_modifier = cmd_modifier_infinite_domain }
+		remove_character_modifier = cmd_modifier_infinite_domain
+	}
+	else = {
+		add_character_modifier = {
+			modifier = cmd_modifier_infinite_domain
+		}
+	}
+}
+
+# === RECURSOS Y DINASTÍA ===
+
+# Otorga 10,000 de Oro al personaje en scope
+cmd_effect_add_gold = {
+	# COMENTARIO ESTRATÉGICO: Añade oro al personaje actual asegurando liquidez inmediata.
+	add_gold = 10000
+}
+
+# Otorga 5,000 de Piedad
+cmd_effect_add_piety = {
+	# COMENTARIO ESTRATÉGICO: Incrementa la piedad para permitir reformas religiosas o peticiones papales instantáneas.
+	add_piety = 5000
+}
+
+# Otorga 5,000 de Prestigio
+cmd_effect_add_prestige = {
+	# COMENTARIO ESTRATÉGICO: Añade prestigio para desbloquear títulos y decisiones de reino de alto nivel.
+	add_prestige = 5000
+}
+
+# Otorga 2,500 de Renombre de Dinastía a la dinastía del personaje
+cmd_effect_add_renown = {
+	# COMENTARIO ESTRATÉGICO: Otorga renombre a la dinastía raíz del personaje para desbloquear legados dinásticos.
+	if = {
+		limit = { exists = dynasty }
+		dynasty = {
+			add_dynasty_renown = 2500
+		}
+	}
+}
+
+# Establece el Pavor (Dread) al máximo (100)
+cmd_effect_max_dread = {
+	# COMENTARIO ESTRATÉGICO: Maximiza el pavor para intimidar a todos los vasallos y prevenir facciones de facción.
+	change_dread = 100
+}
+
+# Otorga Legitimidad (para DLC de Legitimidad si está activo)
+cmd_effect_add_legitimacy = {
+	# COMENTARIO ESTRATÉGICO: Incrementa legitimidad para evitar penalización de sucesión si la mecánica está habilitada.
+	if = {
+		limit = { exists = legitimacy }
+		add_legitimacy = 500
+	}
+}
+
+# Otorga Puntos de Estilo de Vida (Perk Points)
+cmd_effect_add_perk_points = {
+	# COMENTARIO ESTRATÉGICO: Añade 5000 XP a cada árbol de estilo de vida del personaje para ganar puntos de ventaja.
+	add_diplomacy_lifestyle_xp = 5000
+	add_martial_lifestyle_xp = 5000
+	add_stewardship_lifestyle_xp = 5000
+	add_intrigue_lifestyle_xp = 5000
+	add_learning_lifestyle_xp = 5000
+}
+
+# === SALUD Y VIDA ===
+
+# Cura todas las enfermedades y heridas
+cmd_effect_heal_character = {
+	# COMENTARIO ESTRATÉGICO: Limpia todos los rasgos de enfermedad, heridas y estrés del personaje.
+	remove_trait = wounded_1
+	remove_trait = wounded_2
+	remove_trait = wounded_3
+	remove_trait = ill
+	remove_trait = gout_ridden
+	remove_trait = consumption
+	remove_trait = cancer
+	remove_trait = typhus
+	remove_trait = bubonic_plague
+	remove_trait = smallpox
+	remove_trait = lover_pox
+	remove_trait = infirm
+	remove_trait = incapable
+	
+	if = {
+		limit = { exists = stress }
+		add_stress = -500
+	}
+}
+
+# Mata al personaje objetivo limpiamente
+cmd_effect_kill_character = {
+	# COMENTARIO ESTRATÉGICO: Elimina al personaje objetivo simulando muerte por causa natural inmediata.
+	death = {
+		reason = death_natural_causes
+	}
+}
+
+# Encarcela al personaje objetivo por parte del jugador
+cmd_effect_imprison_character = {
+	# COMENTARIO ESTRATÉGICO: Traslada al personaje objetivo a las mazmorras del jugador humano.
+	imprison = {
+		target = scope:actor
+		type = dungeon
+	}
+}
+
+# Libera al personaje de prisión
+cmd_effect_release_character = {
+	# COMENTARIO ESTRATÉGICO: Libera al personaje de cualquier encarcelamiento actual.
+	release_from_prison = yes
+}
+
+# Otorga el rasgo Modo Dios
+cmd_effect_toggle_god_mode = {
+	# COMENTARIO ESTRATÉGICO: Alterna el rasgo cmd_god_mode en el personaje objetivo.
+	if = {
+		limit = { has_trait = cmd_god_mode }
+		remove_trait = cmd_god_mode
+	}
+	else = {
+		add_trait = cmd_god_mode
+	}
+}
+
+# Otorga Opinión +100 del personaje hacia el jugador
+cmd_effect_max_opinion = {
+	# COMENTARIO ESTRATÉGICO: Añade un modificador directo de opinión de +100 del personaje objetivo hacia el jugador.
+	add_opinion = {
+		target = scope:actor
+		modifier = cmd_cheat_love_opinion
+	}
+}
+
+# === REINO, TÍTULOS Y GUERRA ===
+
+# Otorga Claim Fuerte sobre el título principal del personaje objetivo
+cmd_effect_add_strong_claim = {
+	# COMENTARIO ESTRATÉGICO: Otorga al jugador humano una reclamación fuerte sobre el título principal del personaje objetivo.
+	if = {
+		limit = { exists = primary_title }
+		scope:actor = {
+			add_unpressed_claim = prev.primary_title
+		}
+	}
+}
+
+# Maximiza el desarrollo y control del condado capital del personaje
+cmd_effect_max_capital_county = {
+	# COMENTARIO ESTRATÉGICO: Maximiza el desarrollo y el control de la provincia capital del personaje actual.
+	if = {
+		limit = { exists = capital_province }
+		capital_province.county = {
+			change_development_level = 100
+			set_county_control = 100
+		}
+	}
+}
+
+# Forzar victoria en todas las guerras activas
+cmd_effect_win_current_wars = {
+	# COMENTARIO ESTRATÉGICO: Itera sobre las guerras activas del personaje y fuerza la puntuación de guerra al 100%.
+	every_character_war = {
+		limit = {
+			is_war_leader = root
+		}
+		end_war = victory
+	}
+}

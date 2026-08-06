@@ -1,0 +1,108 @@
+# Strategic Comment: Efectos scriptados de granularidad para botones interactivos de la GUI.
+# Permiten ajustar estadisticas individuales, recursos específicos y asignar rasgos mediante clics en la interfaz.
+
+# --- AJUSTES GRANULARES DE ESTADÍSTICAS ---
+cmd_effect_add_diplomacy_5 = {
+	# COMENTARIO ESTRATÉGICO: Incrementa en 5 el atributo base de Diplomacia.
+	change_variable = { name = diplomacy_base value = 5 }
+	add_diplomacy = 5
+}
+
+cmd_effect_add_martial_5 = {
+	# COMENTARIO ESTRATÉGICO: Incrementa en 5 el atributo base de Marcial.
+	add_martial = 5
+}
+
+cmd_effect_add_stewardship_5 = {
+	# COMENTARIO ESTRATÉGICO: Incrementa en 5 el atributo base de Administración.
+	add_stewardship = 5
+}
+
+cmd_effect_add_intrigue_5 = {
+	# COMENTARIO ESTRATÉGICO: Incrementa en 5 el atributo base de Intriga.
+	add_intrigue = 5
+}
+
+cmd_effect_add_learning_5 = {
+	# COMENTARIO ESTRATÉGICO: Incrementa en 5 el atributo base de Aprendizaje.
+	add_learning = 5
+}
+
+cmd_effect_add_prowess_5 = {
+	# COMENTARIO ESTRATÉGICO: Incrementa en 5 la Destreza en combate.
+	add_prowess = 5
+}
+
+# --- RECURSOS GRANULARES ---
+cmd_effect_add_gold_1k = {
+	# COMENTARIO ESTRATÉGICO: Añade 1,000 de oro de forma limpia.
+	add_gold = 1000
+}
+
+cmd_effect_add_prestige_1k = {
+	# COMENTARIO ESTRATÉGICO: Añade 1,000 de prestigio.
+	add_prestige = 1000
+}
+
+cmd_effect_add_piety_1k = {
+	# COMENTARIO ESTRATÉGICO: Añade 1,000 de piedad.
+	add_piety = 1000
+}
+
+cmd_effect_add_renown_1k = {
+	# COMENTARIO ESTRATÉGICO: Añade 1,000 de renombre de dinastía.
+	if = {
+		limit = { exists = dynasty }
+		dynasty = { add_dynasty_renown = 1000 }
+	}
+}
+
+# --- ASIGNACIÓN RÁPIDA DE TRAITS POPULARES ---
+cmd_effect_toggle_genius = {
+	# COMENTARIO ESTRATÉGICO: Alterna el rasgo Genio (intelligence_3).
+	if = {
+		limit = { has_trait = intelligence_3 }
+		remove_trait = intelligence_3
+	}
+	else = {
+		add_trait = intelligence_3
+	}
+}
+
+cmd_effect_toggle_herculean = {
+	# COMENTARIO ESTRATÉGICO: Alterna el rasgo Hércules (physique_3).
+	if = {
+		limit = { has_trait = physique_3 }
+		remove_trait = physique_3
+	}
+	else = {
+		add_trait = physique_3
+	}
+}
+
+cmd_effect_toggle_beautiful = {
+	# COMENTARIO ESTRATÉGICO: Alterna el rasgo Bello (beauty_3).
+	if = {
+		limit = { has_trait = beauty_3 }
+		remove_trait = beauty_3
+	}
+	else = {
+		add_trait = beauty_3
+	}
+}
+
+cmd_effect_toggle_augustus = {
+	# COMENTARIO ESTRATÉGICO: Alterna el rasgo Augusto.
+	if = {
+		limit = { has_trait = augustus }
+		remove_trait = augustus
+	}
+	else = {
+		add_trait = augustus
+	}
+}
+
+cmd_effect_toggle_blake_god = {
+	# COMENTARIO ESTRATÉGICO: Alterna el rasgo personalizado Modo Dios (cmd_god_mode).
+	cmd_effect_toggle_god_mode = yes
+}

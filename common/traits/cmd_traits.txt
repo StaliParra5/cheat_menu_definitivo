@@ -1,0 +1,39 @@
+# Strategic Comment: Trait 'cmd_god_mode' otorgado vía Cheat Menu. Otorga inmortalidad, bonificadores masivos de estadísticas, salud, límite de dominio y ducados.
+cmd_god_mode = {
+	index = 8990 # Identificador único para evitar colisiones con traits vanila
+	
+	icon = "icon_trait_immortal.dds"
+	
+	valid_types = { all }
+	
+	shown_in_timeline = no
+	cannot_be_copied = yes
+	
+	# Modificadores de Atributos Base
+	diplomacy = 50
+	martial = 50
+	stewardship = 50
+	intrigue = 50
+	learning = 50
+	prowess = 50
+
+	# Modificadores Secundarios (Salud, Dominio, Ducados, Fertilidad, Opinión y Pavor)
+	character_modifier = {
+		health = 100
+		domain_limit = 50
+		duchy_limit = 50
+		vassal_limit = 100
+		fertility = 0.5
+		same_opinion = 50
+		dread_baseline = 50
+		dread_gain_mult = 1.0
+		general_opinion = 25
+		vassal_opinion = 30
+		max_military_strength_mult = 0.5
+	}
+	
+	flag = immortal
+	flag = immune_to_disease
+	
+	desc = trait_cmd_god_mode_desc
+}
