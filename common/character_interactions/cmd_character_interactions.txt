@@ -1,11 +1,11 @@
-# Strategic Comment: Interacciones de personaje (Clic Derecho) pulidas gráficamente para el Cheat Menu Definitivo.
-# Agrupa los trucos con íconos nativos de CK3 e interfaces elegantes.
+# Strategic Comment: Interacciones de personaje (Clic Derecho) para el Cheat Menu Definitivo.
+# NOTA: En CK3 las character_interactions NO soportan la propiedad 'icon' directamente.
+# El icono se determina por la categoría y el nombre de la interacción.
 
 # --- Límite de Dominio ---
 cmd_interaction_domain_limit = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -22,8 +22,7 @@ cmd_interaction_domain_limit = {
 cmd_interaction_add_gold = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
-	
+
 	is_shown = {
 		scope:actor = { is_ai = no }
 	}
@@ -39,7 +38,6 @@ cmd_interaction_add_gold = {
 cmd_interaction_heal = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -56,7 +54,6 @@ cmd_interaction_heal = {
 cmd_interaction_kill = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/execute_decision_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -73,7 +70,6 @@ cmd_interaction_kill = {
 cmd_interaction_imprison = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/disown_child_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -91,7 +87,6 @@ cmd_interaction_imprison = {
 cmd_interaction_god_mode = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -108,7 +103,6 @@ cmd_interaction_god_mode = {
 cmd_interaction_max_opinion = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/arrange_marriage_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -125,7 +119,6 @@ cmd_interaction_max_opinion = {
 cmd_interaction_add_claim = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/grant_titles_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -143,7 +136,6 @@ cmd_interaction_add_claim = {
 cmd_interaction_add_strong_hook = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/scheme_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -160,7 +152,6 @@ cmd_interaction_add_strong_hook = {
 cmd_interaction_convert_culture = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -177,7 +168,6 @@ cmd_interaction_convert_culture = {
 cmd_interaction_convert_faith = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -194,7 +184,6 @@ cmd_interaction_convert_faith = {
 cmd_interaction_make_lover = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/arrange_marriage_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -211,7 +200,6 @@ cmd_interaction_make_lover = {
 cmd_interaction_make_soulmate = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/arrange_marriage_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -228,7 +216,6 @@ cmd_interaction_make_soulmate = {
 cmd_interaction_legitimize = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
-	icon = "gfx/interface/icons/character_interactions/grant_titles_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }

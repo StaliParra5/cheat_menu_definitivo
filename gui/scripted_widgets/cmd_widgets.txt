@@ -1,0 +1,6 @@
+# Strategic Comment: Scripted Widgets de CK3 (sistema 1.5+).
+# Registra widgets personalizados para que el motor Jomini los instancie automáticamente
+# sobre el HUD vanilla SIN sobrescribir ningún archivo del juego base.
+# Formato: ruta_del_gui = nombre_del_widget_o_window
+gui/cmd_hud_button.gui = cmd_hud_button_widget
+gui/cmd_main_window.gui = cmd_main_window
