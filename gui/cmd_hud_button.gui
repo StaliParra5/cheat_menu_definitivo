@@ -1,11 +1,11 @@
-# Strategic Comment: Botón de acceso directo en el HUD superior derecho para abrir/cerrar el Cheat Menu Definitivo.
-# Utiliza el textura válida 'byzantine_crown_positive.dds' nativa de CK3.
+# Strategic Comment: Botón de acceso directo en el HUD para abrir/cerrar el Cheat Menu Definitivo.
+# Posicionado en la parte superior izquierda (x=160, y=12) visible sobre el mapa sin obstrucciones.
 
 widget = {
 	name = "cmd_hud_button_widget"
-	parentanchor = top|right
-	position = { -360 42 }
-	size = { 40 40 }
+	parentanchor = top|left
+	position = { 160 12 }
+	size = { 42 42 }
 	layer = top
 
 	button_round = {
