@@ -1,10 +1,11 @@
-# Strategic Comment: Interacciones de personaje (Clic Derecho) para el Cheat Menu Definitivo.
-# Permite al jugador interactuar con cualquier personaje del mapa para ejecutar efectos inmediatos.
+# Strategic Comment: Interacciones de personaje (Clic Derecho) pulidas gráficamente para el Cheat Menu Definitivo.
+# Agrupa los trucos con íconos nativos de CK3 e interfaces elegantes.
 
-# --- Truco: Aumentar Límite de Dominio y Ducados (+100) ---
+# --- Límite de Dominio ---
 cmd_interaction_domain_limit = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -17,10 +18,11 @@ cmd_interaction_domain_limit = {
 	}
 }
 
-# --- Truco: Otorgar 10k Oro ---
+# --- Dar 10k Oro ---
 cmd_interaction_add_gold = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
 	
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -33,10 +35,11 @@ cmd_interaction_add_gold = {
 	}
 }
 
-# --- Truco: Curar Personaje ---
+# --- Curar Personaje ---
 cmd_interaction_heal = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -49,10 +52,11 @@ cmd_interaction_heal = {
 	}
 }
 
-# --- Truco: Matar Personaje ---
+# --- Matar Personaje ---
 cmd_interaction_kill = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/execute_decision_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -65,10 +69,11 @@ cmd_interaction_kill = {
 	}
 }
 
-# --- Truco: Encarcelar ---
+# --- Encarcelar ---
 cmd_interaction_imprison = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/disown_child_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -82,10 +87,11 @@ cmd_interaction_imprison = {
 	}
 }
 
-# --- Truco: Activar Modo Dios ---
+# --- Modo Dios ---
 cmd_interaction_god_mode = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -98,10 +104,11 @@ cmd_interaction_god_mode = {
 	}
 }
 
-# --- Truco: Máxima Opinión (+100) ---
+# --- Máxima Opinión (+100) ---
 cmd_interaction_max_opinion = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/arrange_marriage_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -114,10 +121,11 @@ cmd_interaction_max_opinion = {
 	}
 }
 
-# --- Truco: Otorgar Reclamación Fuerte ---
+# --- Reclamación Fuerte ---
 cmd_interaction_add_claim = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/grant_titles_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -131,10 +139,11 @@ cmd_interaction_add_claim = {
 	}
 }
 
-# --- Truco: Crear Anzuelo Fuerte (Strong Hook) ---
+# --- Anzuelo Fuerte ---
 cmd_interaction_add_strong_hook = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/scheme_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -147,10 +156,11 @@ cmd_interaction_add_strong_hook = {
 	}
 }
 
-# --- Truco: Convertir a Mi Cultura ---
+# --- Convertir Cultura ---
 cmd_interaction_convert_culture = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -163,10 +173,11 @@ cmd_interaction_convert_culture = {
 	}
 }
 
-# --- Truco: Convertir a Mi Religión ---
+# --- Convertir Religión ---
 cmd_interaction_convert_faith = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -179,10 +190,11 @@ cmd_interaction_convert_faith = {
 	}
 }
 
-# --- Truco: Hacer Amante ---
+# --- Hacer Amante ---
 cmd_interaction_make_lover = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/arrange_marriage_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -195,10 +207,11 @@ cmd_interaction_make_lover = {
 	}
 }
 
-# --- Truco: Hacer Alma Gemela ---
+# --- Hacer Alma Gemela ---
 cmd_interaction_make_soulmate = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/arrange_marriage_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -211,10 +224,11 @@ cmd_interaction_make_soulmate = {
 	}
 }
 
-# --- Truco: Legitimar Bastardo ---
+# --- Legitimar Bastardo ---
 cmd_interaction_legitimize = {
 	category = interaction_category_diplomacy
 	common_interaction_options = yes
+	icon = "gfx/interface/icons/character_interactions/grant_titles_interaction.dds"
 
 	is_shown = {
 		scope:actor = { is_ai = no }

@@ -1,4 +1,4 @@
-# Strategic Comment: Decisiones del panel principal de CK3 para trucos de autogestión y recursos globales del reino.
+# Strategic Comment: Decisiones del panel principal de CK3 para trucos de autogestión y acceso rápido al Cheat Menu.
 
 cmd_decision_main_cheat_panel = {
 	title = cmd_decision_main_cheat_panel_name
