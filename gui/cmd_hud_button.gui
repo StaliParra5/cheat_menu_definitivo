@@ -1,5 +1,5 @@
 # Strategic Comment: Botón de acceso directo en el HUD superior derecho para abrir/cerrar el Cheat Menu Definitivo.
-# Utiliza el sistema de variables de interfaz Jomini (GetVariableSystem) para alternar la visibilidad de la ventana.
+# Utiliza el textura válida 'byzantine_crown_positive.dds' nativa de CK3.
 
 widget = {
 	name = "cmd_hud_button_widget"
@@ -16,7 +16,7 @@ widget = {
 		tooltip = "cmd_hud_button_tooltip"
 
 		button_icon = {
-			texture = "gfx/interface/icons/character_interactions/my_realm_interaction.dds"
+			texture = "gfx/interface/icons/character_interactions/byzantine_crown_positive.dds"
 			size = { 26 26 }
 			parentanchor = center
 		}

@@ -1,11 +1,11 @@
 # Strategic Comment: Interacciones de personaje (Clic Derecho) para el Cheat Menu Definitivo.
-# NOTA: En CK3 las character_interactions NO soportan la propiedad 'icon' directamente.
-# El icono se determina por la categoría y el nombre de la interacción.
+# Configurado con auto_accept = yes y sin límite diplomático para ejecución instantánea.
 
 # --- Límite de Dominio ---
 cmd_interaction_domain_limit = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -21,7 +21,8 @@ cmd_interaction_domain_limit = {
 # --- Dar 10k Oro ---
 cmd_interaction_add_gold = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -37,7 +38,8 @@ cmd_interaction_add_gold = {
 # --- Curar Personaje ---
 cmd_interaction_heal = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -53,7 +55,8 @@ cmd_interaction_heal = {
 # --- Matar Personaje ---
 cmd_interaction_kill = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -69,7 +72,8 @@ cmd_interaction_kill = {
 # --- Encarcelar ---
 cmd_interaction_imprison = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -86,7 +90,8 @@ cmd_interaction_imprison = {
 # --- Modo Dios ---
 cmd_interaction_god_mode = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -102,7 +107,8 @@ cmd_interaction_god_mode = {
 # --- Máxima Opinión (+100) ---
 cmd_interaction_max_opinion = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -118,7 +124,8 @@ cmd_interaction_max_opinion = {
 # --- Reclamación Fuerte ---
 cmd_interaction_add_claim = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -135,7 +142,8 @@ cmd_interaction_add_claim = {
 # --- Anzuelo Fuerte ---
 cmd_interaction_add_strong_hook = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -151,7 +159,8 @@ cmd_interaction_add_strong_hook = {
 # --- Convertir Cultura ---
 cmd_interaction_convert_culture = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -167,7 +176,8 @@ cmd_interaction_convert_culture = {
 # --- Convertir Religión ---
 cmd_interaction_convert_faith = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -183,7 +193,8 @@ cmd_interaction_convert_faith = {
 # --- Hacer Amante ---
 cmd_interaction_make_lover = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -199,7 +210,8 @@ cmd_interaction_make_lover = {
 # --- Hacer Alma Gemela ---
 cmd_interaction_make_soulmate = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
@@ -215,7 +227,8 @@ cmd_interaction_make_soulmate = {
 # --- Legitimar Bastardo ---
 cmd_interaction_legitimize = {
 	category = interaction_category_diplomacy
-	common_interaction_options = yes
+	auto_accept = yes
+	use_diplomatic_range = no
 
 	is_shown = {
 		scope:actor = { is_ai = no }
